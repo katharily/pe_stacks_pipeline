@@ -35,33 +35,33 @@ Execute: <br>
 
 ### 1-clean_reads.nf
 
-`/data/nextflow run /data/PE_Stacks_Pipelines/1-clean_reads.nf \` <br>
+`./nextflow run scriptfile/1-clean_reads.nf \` <br>
 `--inputDir /data/Israel-Projekt/Catanache_lutea_AdapterClipped/ \`<br>
 `--outputDir /data/Israel-Projekt/Analysis_Catananche_lutea/`<br>
 
 ### 1-prepare_reference_genome.nf
 
-`/data/nextflow run /data/PE_Stacks_Pipelines/1-prepare_reference_genome.nf \` <br>
+`./nextflow run scriptfile/1-prepare_reference_genome.nf \` <br>
 `--referenceDir /data/Israel-Projekt/genome_assemblies\ lettuce\ cv\ salinas/ \`<br>
 `--outputDir /data/Israel-Projekt/Reference_genomes_indices/lettuce_cv_salinas/`<br>
 
 ### 2-sort_control_and_map.nf
 
-`/data/nextflow run /data/PE_Stacks_Pipelines/2-sort_control_and_map.nf \` <br>
+`./nextflow run scriptfile/2-sort_control_and_map.nf \` <br>
 `--workingDir /data/Israel-Projekt/Analysis_Catananche_lutea/ \`<br>
 `--referenceDir /data/Israel-Projekt/Reference_genomes_indices/lettuce_cv_salinas/ \`<br>
 `--dirName lettuce_cv_salinas`<br>
 
 ### 3-map_creation.nf
 
-`/data/nextflow run /data/PE_Stacks_Pipelines/3-map_creation.nf \`<br>
+`./nextflow run scriptfile/3-map_creation.nf \`<br>
 `--workingDir /data/Israel-Projekt/Analysis_Catananche_lutea/ \`<br>
 `--populationMap /data/Israel-Projekt/Populationmap/Populationmap_Catananche.txt \`<br>
 `--dirName lettuce_cv_salinas`
 
 ### 4-populations.nf
 
-`/data/nextflow run /data/PE_Stacks_Pipelines/4-populations.nf \`<br>
+`./nextflow run scriptfile/4-populations.nf \`<br>
 `--inputDir /data/Israel-Projekt/Analysis_Catananche_lutea/denovo_map/ \`<br>
 `--outputDir /data/Israel-Projekt/Analysis_Catananche_lutea/denovo_map_populations/ \`<br>
 `--populationMap /data/Israel-Projekt/Populationmap/Populationmap_Catananche.txt`<br>
