@@ -1,5 +1,4 @@
 # pe_stacks_pipeline
-
 ## Prerequisites and Set-Up
 ### Windows Users: Activation of Subsystem for Linux
 For the execution of the pipeline with nextflow on a Windows computer, the activation of the Linux subsystem (provided for Windows 10) is required.
@@ -19,6 +18,12 @@ The executable nextflow file will be installed in the directory you execute the 
 For running a nextflow script in general, call the executable nextflow file like the following: <br>
 `$ ./nextflow run ${script name}.nf`<br>
 If necessary, direct to the nextflow file and/or the script you want to execute via a relative path.
+<br>
+<br>
+# Clone Git Repository
+Direct to the directory where you want the repository to be located. <br>
+Execute: <br>
+`git clone https://github.com/katharily/pe_stacks_pipeline.git`
 <br>
 <br>
 # Quick start
